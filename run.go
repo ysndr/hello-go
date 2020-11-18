@@ -1,7 +1,7 @@
 package main
 
 import (
-  library "github.com/flox-examples/go-library"
+  library "github.com/flox-examples/hello-go-library"
   "fmt"
 )
 
