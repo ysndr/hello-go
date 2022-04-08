@@ -3,7 +3,7 @@
 
   # Nixpkgs / NixOS version to use.
   inputs.nixpkgs.url = "github:nixos/nixpkgs";
-  inputs.capacitor.url = "/home/samrose/Desktop/capacitor";
+  inputs.capacitor.url = "github:flox/capacitor";
   inputs.flake-utils.url = "github:numtide/flake-utils";
   outputs = { self, nixpkgs, capacitor, flake-utils }:
     let
