@@ -1,7 +1,6 @@
 name: "Create built versions cache"
 
 on:
-  workflow_dispatch:
   pull_request:
   push:
     inputs:
