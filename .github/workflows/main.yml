@@ -1,8 +1,7 @@
 name: "Create built versions cache"
 
 on:
-  pull_request:
-  push:
+  workflow_dispatch:
     inputs:
       system:
         description: "Target system"
