@@ -1,26 +1,7 @@
 name: "Create built versions cache"
 
 on:
-  workflow_dispatch:
-    inputs:
-      system:
-        description: "Target system"
-        required: true
-        type: string
-        default: "x86_64-linux"
-      aws-bucket:
-        description: "AWS S3 Bucket"
-        required: true
-        type: string
-        default: "versions-cache"
-
-    # secrets:
-      # AWS_ACCESS_KEY_ID:
-      #   required: true
-      # AWS_SECRET_ACCESS_KEY:
-      #   required: true
-      # GIT_TOKEN:
-      #   required: false
+  push:
 
 jobs:
   eval_cache:
