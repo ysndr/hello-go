@@ -2,6 +2,7 @@ name: "Create built versions cache"
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   eval_cache:
