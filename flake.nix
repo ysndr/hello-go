@@ -1,4 +1,4 @@
-{
+rec {
   description = "hello-go package";
 
   # Nixpkgs / NixOS version to use.
