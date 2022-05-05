@@ -3,9 +3,8 @@ rec {
 
   # Nixpkgs / NixOS version to use.
   inputs.nixpkgs.url = "github:nixos/nixpkgs";
-  inputs.capacitor.url = "github:flox/capacitor";
   inputs.flake-utils.url = "github:numtide/flake-utils";
-  outputs = { self, nixpkgs, capacitor, flake-utils,... } @ args:
+  outputs = { self, nixpkgs, flake-utils,... } @ args:
 
     let
       version = builtins.substring 0 8 self.lastModifiedDate;
@@ -38,6 +37,5 @@ rec {
           defaultPackage = packages.hello-go;
         }
       );
-    in
-    capacitor.lib.capacitate args inputs ( _: flake);
+    in flake;
 }
